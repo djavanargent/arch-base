@@ -49,7 +49,7 @@ chsh -s /bin/bash nobody
 pacman -Syu --ignore filesystem --noconfirm
 
 # install additional packages
-pacman -S supervisor grep ldns moreutils vi net-tools unzip unrar htop jq --noconfirm
+pacman -S supervisor ldns moreutils vi net-tools unzip unrar htop jq --noconfirm
  
 # force re-install of ncurses 6.x with 5.x backwards compatibility (can be removed onced all apps have switched over to ncurses 6.x)
 curl -o /tmp/ncurses5-compat-libs-x86_64.pkg.tar.xz -L https://github.com/binhex/arch-packages/raw/master/compiled/ncurses5-compat-libs-x86_64.pkg.tar.xz
